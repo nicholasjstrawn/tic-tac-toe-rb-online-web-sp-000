@@ -96,7 +96,7 @@ end
 def draw?(board)
   if won?(board) == nil && full?(board) == true
     return true
-  elsif !full?(board) && !won?(board)
+  elsif full?(board) == nil && won?(board) == nil
     return false
   else won?(board)
     return false
